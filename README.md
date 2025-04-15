@@ -1,50 +1,32 @@
-# Welcome to your Expo app 👋
+# API-JACQUES-POKE
+não estava conseguindo upar o code certinho aqui ai vou pedir para voce baixar o .zip, obgggg
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 📱 App Pokédex (React Native + Expo)
 
-## Get started
+Esse projeto é uma pequena Pokédex feita com **React Native** usando o **Expo**, só pra brincar com consumo de APIs REST usando a [PokeAPI](https://pokeapi.co/). Ele lista alguns Pokémons e mostra detalhes de cada um quando clicado.
 
-1. Install dependencies
+## 🚀 Como rodar
 
-   ```bash
-   npm install
-   ```
+1. Clone o repositório:
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
+Instale as dependências:
 
-In the output, you'll find options to open the app in a
+npm install
+Rode o app:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+npm run web
 
-## Get a fresh project
+📝 Relatório Técnico
+Como foi feito
+Usei o fetch() pra pegar os dados da PokeAPI, que é pública O app tem duas telas principais: uma que mostra a lista de Pokémons e outra que mostra os detalhes quando você clica num deles.
 
-When you're ready, run:
+Usei useState, useEffect, FlatList, TouchableOpacity e ActivityIndicator pra controlar o estado, exibir os dados e mostrar um loading enquanto carrega.
 
-```bash
-npm run reset-project
-```
+Desafio
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Layout responsivo: ajustar a visualização dos cards e detalhes pra funcionar bem tanto na lista quanto na página de detalhes exigiu um pouco de trabalho com o StyleSheet.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Fetch vs Axios
+Nesse projeto usei apenas fetch() porque ele já é nativo no React Native e funciona muito bem pra chamadas simples.
